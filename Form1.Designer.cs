@@ -40,6 +40,7 @@
             ConsoleTB = new TextBox();
             totalLB = new Label();
             speedYLB = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)old_display).BeginInit();
             ((System.ComponentModel.ISupportInitialize)new_display).BeginInit();
@@ -84,11 +85,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(166, 42);
+            label1.BackColor = SystemColors.Control;
+            label1.Location = new Point(315, 11);
             label1.Name = "label1";
-            label1.Size = new Size(58, 20);
+            label1.Size = new Size(104, 20);
             label1.TabIndex = 4;
-            label1.Text = "camera";
+            label1.Text = "Select Camera";
             // 
             // start_btn
             // 
@@ -119,7 +121,7 @@
             // 
             // ConsoleTB
             // 
-            ConsoleTB.Location = new Point(78, 435);
+            ConsoleTB.Location = new Point(89, 484);
             ConsoleTB.Name = "ConsoleTB";
             ConsoleTB.Size = new Size(125, 27);
             ConsoleTB.TabIndex = 8;
@@ -129,14 +131,12 @@
             // 
             totalLB.AutoSize = true;
             totalLB.BackColor = SystemColors.Control;
-            //totalLB.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             totalLB.Location = new Point(441, 491);
             totalLB.Name = "totalLB";
-            totalLB.Size = new Size(65, 35);
+            totalLB.Size = new Size(40, 20);
             totalLB.TabIndex = 9;
             totalLB.Text = "total";
             totalLB.Click += totalLB_Click;
-            
             // 
             // speedYLB
             // 
@@ -149,12 +149,23 @@
             speedYLB.TabIndex = 10;
             speedYLB.Text = "speedYtext";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(121, 456);
+            label2.Name = "label2";
+            label2.Size = new Size(62, 20);
+            label2.TabIndex = 11;
+            label2.Text = "Console";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(832, 578);
+            Controls.Add(label2);
             Controls.Add(speedYLB);
             Controls.Add(totalLB);
             Controls.Add(ConsoleTB);
@@ -188,5 +199,6 @@
         private TextBox ConsoleTB;
         private Label totalLB;
         private Label speedYLB;
+        private Label label2;
     }
 }
